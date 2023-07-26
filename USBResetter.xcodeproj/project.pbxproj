@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F3C86E92A5090880038B0DD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3C86E82A5090880038B0DD /* CoreFoundation.framework */; };
+		5F3C86ED2A5091020038B0DD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3C86EC2A5091020038B0DD /* IOKit.framework */; };
 		5FD1A6002A420DB8003A7041 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5FD1A5FF2A420DB8003A7041 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F3C86E82A5090880038B0DD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5F3C86EA2A5090A30038B0DD /* IOUSBHost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOUSBHost.framework; path = System/Library/Frameworks/IOUSBHost.framework; sourceTree = SDKROOT; };
+		5F3C86EC2A5091020038B0DD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		5FD1A5FC2A420DB8003A7041 /* USBResetter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = USBResetter; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD1A5FF2A420DB8003A7041 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F3C86E92A5090880038B0DD /* CoreFoundation.framework in Frameworks */,
+				5F3C86ED2A5091020038B0DD /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F3C86E72A5090750038B0DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F3C86EC2A5091020038B0DD /* IOKit.framework */,
+				5F3C86EA2A5090A30038B0DD /* IOUSBHost.framework */,
+				5F3C86E82A5090880038B0DD /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5FD1A5F32A420DB8003A7041 = {
 			isa = PBXGroup;
 			children = (
 				5FD1A5FE2A420DB8003A7041 /* USBResetter */,
 				5FD1A5FD2A420DB8003A7041 /* Products */,
+				5F3C86E72A5090750038B0DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
