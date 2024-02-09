@@ -8,3 +8,7 @@ and based on some sample code I've seen, but it seems to work.
 Note that after resetting the adapter(s), there must be some event to get 
 OSX to notice the adapters and wake  the screens up.  So resetting the 
 adapter, THEN powering up the monitors usually does the trick.   
+
+There is a swift rewrite of this availble here:
+
+https://github.com/waydabber/vmm7100reset/tree/main
